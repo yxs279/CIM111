@@ -1,16 +1,15 @@
 header{
   background-color: black;
   width: 920px;
-  /* height: 100px; */
   height: auto;
-  padding: 20px 20px 20px 20px; /* top right bottom left */
+  padding: 20px 20px 20px 20px;
 
-  border-width: 0px 0px 5px 0px;/* top right bottom left */
+  border-width: 0px 0px 5px 0px;
   border-color: black;
   border-style: solid;
 
-  margin: 10px auto 30px auto; /* top right bottom left */
-  margin: 0 auto; /* top and bottom, right and left */
+  margin: 10px auto 30px auto;
+  margin: 0 auto;
   margin-top: -10px;
   font-family: 'Oswald';
   font-size: 24px;
@@ -18,10 +17,12 @@ header{
 
 main{
   background-color: OldLace;
-  width: 910px; /* width adjusted for padding and border*/
-  /* height: 100px; */
-  height: auto; /*height auto automatically adjusts the height of your container based on content */
-  padding: 20px; /* add inner spacing 20px top, right, bottom, left */
+  font-family: 'Nunito';
+  font-size: 14.5px;
+  width: 910px;
+
+  height: auto;
+  padding: 20px;
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -31,7 +32,6 @@ main{
   border-style: groove;
   border-color: darkgrey;
 
-  /* Margin adjusts spacing around container, setting left and right to auto, centers container, margin auto only works if you have a width dimension */
   margin-top: 10px;
   margin-right: auto;
   margin-bottom: 20px;
@@ -42,15 +42,13 @@ footer{
   background-color: black;
   width: 960px;
   height: 100px;
-  /* height: auto; if no content is in container, the box will collapse on itself, or disappear */
-
   margin: 0 auto;
 
 }
 
 nav{
   background-color: darkgrey;
-  width: 550px;
+  width: 650px;
   margin: 0 auto;
   text-align: center;
 }
@@ -69,7 +67,7 @@ nav ul li{
 nav ul li a{
   text-decoration: none;
   color: black;
-  font-size: 20px
+  font-size: 20px;
 }
 
 nav ul li:hover{
@@ -87,39 +85,79 @@ nav ul li:hover{
 
 }
 
-#grid2{
+#Porsche{
   width: 850px;
   height: auto;
   margin: 70px auto;
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: 50px;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 50px;
 }
 
-#grid2 img{
+#Porsche img{
   width: 430px;
-  margin: 0 auto;
+  margin: 75px auto;
   display: block;
 }
 
-#Hobbies{
+#AMG{
   width: 850px;
   height: auto;
   margin: 50px auto;
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: px;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 50px;
 
 }
 
-#Hobbies img{
+#AMG img{
   width: 430px;
+  margin: 75px auto;
+  display: block;
+  margin-top: -220px;
+}
+
+#gle63s{
+  width: 850px;
+  height: auto;
+  margin: 70px auto;
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+}
+
+#gle63s img{
+  width: 460px;
+  margin-top: -190px;
 
 }
+
+#panamera{
+  width: 850px;
+  height: auto;
+  margin: 70px auto;
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+}
+
+#panamera img{
+  width: 380px;
+  display: block;
+
+}
+
 #Home{
   color: white;
   text-align: center;
   margin: 60px;
+}
+.headline{
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
 }
