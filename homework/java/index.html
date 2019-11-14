@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+           rel="stylesheet">
+
+
+    <style>
+    header{
+      background-color: Linen;
+      width: 1100px;
+      height: auto;
+      padding: 20px 20px 20px 20px;
+
+      border-width: 7px;
+      border-color: darkgrey;
+      border-style: outset;
+
+      margin: 10px auto 30px auto;
+      margin: 0 auto;
+      margin-top: -10px;
+      font-family: 'Oswald';
+      font-size: 24px;
+      }
+
+    main{
+      background-color: Linen;
+      font-family: 'Nunito';
+      font-size: 14.5px;
+      width: 1100px;
+
+      height: auto;
+      padding: 20px;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+
+      border-width: 7px;
+      border-style: outset;
+      border-color: darkgrey;
+
+      margin-top: 10px;
+      margin-right: auto;
+      margin-bottom: 20px;
+      margin-left: auto;
+
+    }
+
+    nav{
+      background-color: darkgrey;
+      width: 650px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    nav ul{
+
+    }
+
+    nav ul li{
+      list-style: none;
+      display: inline-block;
+      margin-right: 20px;
+      padding: 10px;
+    }
+
+    nav ul li a{
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+    }
+
+    nav ul li:hover{
+      background-color: white;
+    }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .boxs {
+            width: 99%;
+            /*border: 1px solid #000000;*/
+        }
+
+        .box, boxplugin {
+            float: left;
+            width: 31%;
+            margin: 1%;
+            /*border: 1px solid #000000;*/
+            position: relative;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .box img {
+            width: 100%;
+
+        }
+
+        p {
+            font-size: 25px;
+            text-align: left;
+            font-family: 'Nunito';
+
+        }
+
+        .box span {
+            font-size: 25px;
+            color: Black;
+            /*position: absolute;
+            top: 30%;
+            left: 35%;*/
+            display: none;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes rotate {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        #grid1{
+          width: 900px;
+          height: auto;
+          margin: 50px auto;
+          display: grid;
+
+}
+
+        #grid2{
+            width: 900px;
+            height: auto;
+            margin: 50px auto;
+            display: grid;
+
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1 id="h1">Shanghai Travel Guide</h1>
+    <br />
+    <br />
+    <nav>
+      <ul>
+        <li><a href="#EXPO">Shanghai EXPO CulturalPark</a></li>
+        <li><a href="#touristattractions">Tourist Attractions</a></li>
+
+      </ul>
+    </nav>
+    <br />
+    <br />
+    </header>
+
+    <main>
+    <section id="grid1">
+    <p>
+        Shanghai is one of China's four municipalities directly under the Central Government and is China's economic, financial, trade, shipping, and technology innovation center. Shanghai is located in East China, bordering on 120°52′-122°12′ east longitude and 30°40′-31°53′ north latitude. It is located at the mouth of the Yangtze River, east of the East China Sea and Jeju Island of South Korea, and Kyushu of Japan. The island faces each other, Hangzhou Bay in the south, and the north and west are connected with Jiangsu and Zhejiang provinces. The total area of ​​Shanghai is 6340.5 square kilometers, and there are 16 municipal districts under its jurisdiction.
+    </p>
+  </section>
+    <br />
+
+
+
+  </div>
+  <h1 id="EXPO" data-fancybox="hello" data-src="#hello">Shanghai EXPO CulturalPark</h1>
+  <br />
+  <br />
+  <div class="boxplugin">
+      <a data-fancybox="gallery" href="images/1.jpg"><img src="images/1.jpg" alt="Alternate Text" /></a>
+  </div>
+
+
+  <br />
+  <br />
+  <section id="grid2">
+  <p>Shanghai was ranked as “the world's first-tier city” by the 2018 World Urban System Ranking released by GaWC. Shanghai ranked 19th in the world's 2019 global city rankings by Kearney and 3rd in China. In the 2019 Global City Business Environment Index and Top 100 Cities, Shanghai ranked 48th in the world and 4th in China. On October 31, 2019, Shanghai was selected for the first batch of 5G commercial cities.
+  </p>
+</section>
+
+  <br />
+  <br />
+    <h1 id="touristattractions">Tourist Attractions</h1>
+    <br />
+    <br />
+    <div class="boxs">
+        <div class="box">  <img src="http://www.xinhuanet.com/city/2018-11/29/1210004909_15434553390311n.jpeg" alt="Alternate Text" />  <span>The Bund</span></div>
+        <div class="box"> <img src="http://222.73.31.222/place_sh_cn_api/Public/upload/place/main_20170601111413_1104856231.jpg" alt="Alternate Text" /><span>Oriental Pearl TV Tower</span>  </div>
+        <div class="box">  <img src="https://youimg1.c-ctrip.com/target/100o0b0000005rizhF58E.jpg" alt="Alternate Text" /> <span>Nanjing Road</span></div>
+        <div class="box">  <img src="http://5b0988e595225.cdn.sohucs.com/images/20190502/836161f6389a4044bfbac67ea5390c8e.jpeg" alt="Alternate Text" /> <span>Yu Garden</span></div>
+        <div class="box">   <img src="https://www.bingwallpaperhd.com/wp-content/uploads/2018/07/SWFC.jpg" alt="Alternate Text" /><span>Shanghai World Financial Center</span></div>
+        <div class="box"><img src="http://n.sinaimg.cn/sinacn10115/207/w2048h1359/20190705/65a0-hzmafvm4353697.jpg" alt="Alternate Text" /><span>People's Square</span>   </div>
+        <div style="clear:both"></div>
+
+
+    </main>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+    <form id="hello" action="" method="post" style="display: none;width:100%;max-width:660px;">
+        <h2 class="mb-3">
+            Welcome to here!
+        </h2>
+    </form>
+    <!-- 2. Create links -->
+        <p id="changeText"></p>
+
+    <script>
+        $("#h1").on('click', function () {
+            $("#h1").html("Welcome to Shanghai");
+            $("#h1").css("font-size", "39px");
+            $("#h1").css("color", "Grey");
+        });
+
+        $(".box").on('mouseover', function () {
+            $(this).find("span").show();
+        });
+
+        $(".box").on('mouseleave', function () {
+            $(this).find("span").hide();
+        });
+
+        $(".box img").on('click', function () {
+            $(this).css("-webkit-animation", "rotate 2s linear");
+        });
+
+        $("p").on('mouseover', function () {
+            $(this).css("font-size", "25px");
+            $(this).css("background-color", "white");
+
+        });
+
+        $("p").on('mouseleave', function () {
+            $(this).css("font-size", "25px");
+            $(this).css("color", "black");
+        });
+
+
+
+    </script>
+</body>
+</html>
