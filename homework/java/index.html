@@ -11,7 +11,7 @@
 
     <style>
     header{
-      background-color: Linen;
+      /* background-color: Linen; */
       width: 1100px;
       height: auto;
       padding: 20px 20px 20px 20px;
@@ -28,7 +28,7 @@
       }
 
     main{
-      background-color: Linen;
+      /* background-color: Linen; */
       font-family: 'Nunito';
       font-size: 14.5px;
       width: 1100px;
@@ -158,10 +158,34 @@
 
 
         }
+
+        #video2{
+          width: 800px;
+          height: 320px;
+          margin-left: 140px;
+        }
+
+        #video3{
+          width: 800px;
+          height: 320px;
+          margin-left: 140px;
+        }
+
+        #video4{
+          width: 800px;
+          height: 320px;
+          margin-left: 140px;
+        }
+
+        #video5{
+          width: 1150px;
+          height: 460px;
+          margin-left: 56px;
+        }
     </style>
 </head>
 <body>
-    <header>
+    <header  id="block" data-vide-bg="video/Shanghai" data-vide-options="position: 0% 50%">
     <h1 id="h1">Shanghai Travel Guide</h1>
     <br />
     <br />
@@ -177,12 +201,20 @@
     </header>
 
     <main>
+
+      <div id="video2" data-vide-bg="video/Shanghai1" data-vide-options="position: 0% 50%" ></div>
+
     <section id="grid1">
     <p>
         Shanghai is one of China's four municipalities directly under the Central Government and is China's economic, financial, trade, shipping, and technology innovation center. Shanghai is located in East China, bordering on 120°52′-122°12′ east longitude and 30°40′-31°53′ north latitude. It is located at the mouth of the Yangtze River, east of the East China Sea and Jeju Island of South Korea, and Kyushu of Japan. The island faces each other, Hangzhou Bay in the south, and the north and west are connected with Jiangsu and Zhejiang provinces. The total area of ​​Shanghai is 6340.5 square kilometers, and there are 16 municipal districts under its jurisdiction.
     </p>
+
   </section>
-    <br />
+  <br>
+  <br>
+  <div id="video3" data-vide-bg="video/Shanghai2" data-vide-options="position: 0% 50%" ></div>
+    <br>
+    <br>
 
 
 
@@ -202,8 +234,12 @@
   </p>
 </section>
 
-  <br />
-  <br />
+<br>
+<br>
+<div id="video4" data-vide-bg="video/Shanghai3" data-vide-options="position: 0% 50%" ></div>
+
+  <br>
+  <br>
     <h1 id="touristattractions">Tourist Attractions</h1>
     <br />
     <br />
@@ -216,10 +252,17 @@
         <div class="box"><img src="http://n.sinaimg.cn/sinacn10115/207/w2048h1359/20190705/65a0-hzmafvm4353697.jpg" alt="Alternate Text" /><span>People's Square</span>   </div>
         <div style="clear:both"></div>
 
+      </div>
+
+
+
+
 
     </main>
 
-
+    <footer>
+      <div id="video5" data-vide-bg="video/Shanghai4" data-vide-options="position: 0% 50%" ></div>
+    </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -227,6 +270,9 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script src="js/jquery.vide.min.js"></script>
+
 
 
     <form id="hello" action="" method="post" style="display: none;width:100%;max-width:660px;">
@@ -237,35 +283,87 @@
     <!-- 2. Create links -->
         <p id="changeText"></p>
 
-    <script>
-        $("#h1").on('click', function () {
-            $("#h1").html("Welcome to Shanghai");
-            $("#h1").css("font-size", "39px");
-            $("#h1").css("color", "Grey");
-        });
+        <div>
 
-        $(".box").on('mouseover', function () {
-            $(this).find("span").show();
-        });
 
-        $(".box").on('mouseleave', function () {
-            $(this).find("span").hide();
-        });
 
-        $(".box img").on('click', function () {
-            $(this).css("-webkit-animation", "rotate 2s linear");
-        });
 
-        $("p").on('mouseover', function () {
-            $(this).css("font-size", "25px");
-            $(this).css("background-color", "white");
+        </div>
 
-        });
 
-        $("p").on('mouseleave', function () {
-            $(this).css("font-size", "25px");
-            $(this).css("color", "black");
-        });
+    <script type="text/javascript">
+
+      //  $('#block').vide('video/ocean'); // Non declarative initialization
+      $(document).ready(function(){
+        $('#block').vide({
+        'mp4': 'video/Shanghai',
+        'webm': 'video/Shanghai',
+        'ogv': 'video/Shanghai',
+        'poster': 'video/Shanghai',
+      });
+
+      $('#video2').vide({
+      'mp4': 'video/Shanghai1',
+      'webm': 'video/Shanghai1',
+      'ogv': 'video/Shanghai1',
+      'poster': 'video/Shanghai1',
+      'gif': 'video/Shanghai1',
+    });
+
+    $('#video3').vide({
+    'mp4': 'video/Shanghai2',
+    'webm': 'video/Shanghai2',
+    'ogv': 'video/Shanghai2',
+    'poster': 'video/Shanghai2',
+    'gif': 'video/Shanghai2',
+  });
+
+  $('#video4').vide({
+  'mp4': 'video/Shanghai3',
+  'webm': 'video/Shanghai3',
+  'ogv': 'video/Shanghai3',
+  'poster': 'video/Shanghai3',
+  'gif': 'video/Shanghai3',
+});
+
+$('#video5').vide({
+'mp4': 'video/Shanghai4',
+'webm': 'video/Shanghai4',
+'ogv': 'video/Shanghai4',
+'poster': 'video/Shanghai4',
+'gif': 'video/Shanghai4',
+});
+          $("#h1").on('click', function () {
+              $("#h1").html("Welcome to Shanghai");
+              $("#h1").css("font-size", "39px");
+              $("#h1").css("color", "Grey");
+          });
+
+          $(".box").on('mouseover', function () {
+              $(this).find("span").show();
+          });
+
+          $(".box").on('mouseleave', function () {
+              $(this).find("span").hide();
+          });
+
+          $(".box img").on('click', function () {
+              $(this).css("-webkit-animation", "rotate 2s linear");
+          });
+
+          $("p").on('mouseover', function () {
+              $(this).css("font-size", "25px");
+              $(this).css("background-color", "white");
+
+          });
+
+          $("p").on('mouseleave', function () {
+              $(this).css("font-size", "25px");
+              $(this).css("color", "black");
+          });
+
+      });
+
 
 
 
