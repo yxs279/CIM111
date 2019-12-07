@@ -1,0 +1,105 @@
+@import "desktop.css";
+
+
+
+header{
+  width: 410px;
+}
+
+main{
+  width: 400px;
+  height: 4800px;
+}
+
+footer{
+  width: 455px;
+}
+
+nav{
+  width: 350px;
+}
+
+nav ul{
+  margin-left: -20px;
+}
+
+nav ul li{
+  display: block;
+  text-align: center;
+
+}
+
+nav ul li a{
+  font-size: 18px;
+}
+
+#grid1{
+  width: 400px;
+  display: block;
+
+
+}
+
+
+#grid2{
+  width: 400px;
+    margin: 0 auto;
+  display: block;
+
+}
+
+#grid2 img{
+  width: 400px;
+  margin: 0 auto;
+  display: block;
+
+
+
+}
+
+#grid3{
+  width: 400px;
+  display: block;
+  margin-right: 50px;
+}
+
+#grid3 img{
+  width: 380px;
+  margin: 75px auto;
+  display: block;
+}
+
+#grid4{
+  width: 400px;
+        margin: 0 auto;
+  display: block;
+}
+
+#grid4 img{
+  width: 380px;
+  margin: 75px auto;
+  display: block;
+}
+
+#grid5{
+  width: 400px;
+
+  display: block;
+}
+
+#grid5 img{
+  width: 380px;
+  margin: 75px auto;
+  display: block;
+}
+
+#video2 {
+  width: 380px;
+  margin: 75px auto;
+  display: block;
+}
+#video3{
+  width: 380px;
+  margin: 75px auto;
+  display: block;
+}
